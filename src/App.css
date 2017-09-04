@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #ffffff;
+  color: #444;
+  height: 55px;
+  padding: 20px;
+}
+
+.App-border {
+  background-color: #442200;
+  height: 15px;
+  padding: 0;
+}
+
+.App-body {
+  background-color: #996633;
+  height: 600px;
+  padding: 20px;
+}
+
+.App-footer {
+  background-color: #ffffff;
+  height: 55px;
+}
+
