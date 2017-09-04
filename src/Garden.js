@@ -13,13 +13,23 @@ class Garden extends React.Component {
 
   resetSystem() {
     this.setState(prevState => ({
-        system: 'A'
+      system: 'A'
     }));
+  }
+
+  incrementI(value) {
+    return value.replace(/I(\d+)/g, function(match, value) {
+      return 'I' + (2* value);
+    })
+  }
+
+  incrementA(value) {
+    return value.replace(/A/g, 'I1[+A][-A]I1A');
   }
 
   incrementSystem() {
     this.setState(prevState => ({
-        system: prevState.system + 'X'
+      system: this.incrementA(this.incrementI(prevState.system))
     }));
   }
 
