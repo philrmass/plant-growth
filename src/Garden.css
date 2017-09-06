@@ -1,4 +1,15 @@
 .Garden {
-  display: block;
+  block: inline;
+  height: 300px;
+  width: 300px;
+}
+
+input[type=button] {
+  background-color: #fff;
+  border: 1px solid #420;
+  color: #420;
+  font-size: large;
+  height: 1.75em;
+  width: 4em;
 }
 

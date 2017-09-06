@@ -3,8 +3,8 @@ import './App.css';
 import Garden from './Garden.js';
 
 var PLANTS = [
-  {id: 0, x: 175, y: 300, sx: 0, sy: -20, color: '#50d000'},
-  {id: 1, x: 0,   y: 200, sx: 7, sy: -7,  color: '#80ff00'}
+  {id: 0, x: 200, y: 300, fx: 0, fy: -10, color: '#80ff00'},
+  {id: 1, x: 110,   y: 300, fx: -1, fy: -6,  color: '#50d000'}
 ]
  
 class App extends Component {

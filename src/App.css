@@ -3,26 +3,26 @@
 }
 
 .App-header {
-  background-color: #ffffff;
+  background-color: white;
   color: #444;
   height: 55px;
   padding: 20px;
 }
 
 .App-border {
-  background-color: #442200;
+  background-color: #420;
   height: 15px;
   padding: 0;
 }
 
 .App-body {
-  background-color: #996633;
+  background-color: #996638;
   height: 600px;
   padding: 20px;
 }
 
 .App-footer {
-  background-color: #ffffff;
+  background-color: white;
   height: 55px;
 }
 
