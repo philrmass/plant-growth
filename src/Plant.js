@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Plant extends React.Component {
-  branch(side, system, params) {
+  branchSystem(side, system, params) {
       var lx = params.x;
       var ly = params.y;
       var lfx = params.fx;
@@ -51,7 +51,7 @@ class Plant extends React.Component {
           var scale = 1;
           if(matched && matched[1])
           {
-              scale = matched[1];
+              scale = Math.pow(2, matched[1]);
               params.index += matched[1].length;
           }
           params.index++;
@@ -72,7 +72,7 @@ class Plant extends React.Component {
         case '[':
           var side = (system[params.index + 1] === '+')
           params.index += 2;
-          this.branch(side, system, params);
+          this.branchSystem(side, system, params);
           break;
 
         case ']':

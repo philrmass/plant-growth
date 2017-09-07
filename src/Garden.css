@@ -1,15 +1,29 @@
 .Garden {
-  block: inline;
-  height: 300px;
-  width: 300px;
+  background-color: #996638;
+  height: 350px;
+  width: 320px;
 }
 
 input[type=button] {
-  background-color: #fff;
-  border: 1px solid #420;
-  color: #420;
-  font-size: large;
+  background-color: white;
+  border: 1px solid;
+  color: #444;
+  font-size: 18px;
   height: 1.75em;
+  margin-top: 0.25em;
   width: 4em;
+}
+
+.System {
+  margin-top: 0.75em;
+}
+
+.System p {
+  font-size: 14px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 320px;
 }
 

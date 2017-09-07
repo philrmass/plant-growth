@@ -19,12 +19,12 @@ class Garden extends React.Component {
 
   incrementI(value) {
     return value.replace(/I(\d+)/g, function(match, value) {
-      return 'I' + (2* value);
+      return 'I' + (++value);
     })
   }
 
   incrementA(value) {
-    return value.replace(/A/g, 'I1[+A][-A]I1A');
+    return value.replace(/A/g, 'I0[+A][-A]I0A');
   }
 
   incrementSystem() {
@@ -51,13 +51,15 @@ class Garden extends React.Component {
     return (
       <div>
         <svg className="Garden">
-          <rect className="Garden" />
          {plants}
         </svg>
         <form>
           <input type="button" name="grow" value="Grow" onClick={this.incrementSystem} />
           <input type="button" name="reset" value="Reset" onClick={this.resetSystem} />
         </form>
+        <div className="System">
+          <p>{this.state.system}</p>
+        </div>
       </div>
     );
   }
