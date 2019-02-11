@@ -17,7 +17,7 @@ grows_
 
 _You can view the deployed site [here](https://plantsystem.herokuapp.com/)_
 
-![ScreenShot](img/screenShot.png)
+![ScreenShot](img/screenshot.png)
 
 ## Setup and Installation
 
